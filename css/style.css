@@ -1,14 +1,5 @@
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-ul,
-li {
-    list-style: none;
-}
-
+* {margin: 0;padding: 0;}
+ul,li {list-style: none;}
 a {
     text-decoration: none;
 }
@@ -32,21 +23,11 @@ a {
     background-size: cover;
 }
 
-#wrap>div:nth-child(2) {
-    background: #EEE3D1;
-}
-
-#wrap>div:nth-child(3) {
-    background-color: rgb(135, 222, 208);
-}
-
-#wrap>div:nth-child(4) {
-    background-color: rgb(135, 183, 222);
-}
-
-#wrap>div:nth-child(5) {
-    background-color: rgb(222, 135, 208);
-}
+#wrap>div:nth-child(2),
+#wrap>div:nth-child(3),
+#wrap>div:nth-child(4),
+#wrap>div:nth-child(5)
+{background: #EEE3D1;}
 
 #wrap>div {
     /* margin: 0 auto; */
@@ -93,7 +74,7 @@ a {
 #main h2 {
     float: left;
     width: 100%;
-    margin: 100px 0 20px 30%;
+    margin: 60px 0 20px 1%;
     font-size: 100px;
     text-align: center;
     /* padding-right: 100px; */
@@ -104,22 +85,22 @@ a {
 }
 
 #main p {
-    /* float: right;
-    margin: 20px 0px 0 0; */
+    /* float: right; */
+    margin: 15px 0 0 0;
     font-size: 20px;
     color: #D6CBC2;
-    text-align: center;
+    /* text-align: center; */
     /* padding-top: 300px; */
     font-family: 'Scarlett Busiat_Demo';
     color: #e8c89c;
     font-weight: 500;
-    margin-left: 60%;
+    margin-left: 49%;
 }
 
 #q_mn {
     position: absolute;
     right: 20px;
-    top: 300px;
+    top: 100px;
     z-index: 9999;
     width: 120px;
     height: 200px;
@@ -150,7 +131,7 @@ a {
 #q_mn ul.nav li.on a {
     color: rgb(15, 15, 15);
 }
-
+/* =================== 프로필 ============================ */
 #profile {
     width: 100%;
     height: 100vh;
@@ -162,7 +143,7 @@ a {
     color: #184B44;;
     font-weight: 400;
     font-size: 110px;
-    /* margin-left:150px; */
+    margin-left: 280px;
 }
 #profile .pro_area{
     width: 1200px;
@@ -172,35 +153,72 @@ a {
     width: 1200px;
     height: auto;
     display: flex;
-    padding-top: 90px;
+    padding-top: 25px;
     position: relative;
     z-index: 100;
-    border:1px solid red;
+    /* border:1px solid red; */
     flex-direction: column;
 }
 #profile .in_profile .in_txt{
-    width: 100%; height: 200px;
+    width: 100%; 
+    height: 150px;
 }
-#profile .in_profile .group{display: flex;}
+#profile .in_profile .group{
+    display: flex;
+    margin-left: 250px;
+    width: 1000px;
+    height: 700px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    outline: 1px solid rgba(0, 0, 0, 0.5);
+}
 #profile .photo{
+    /* width: 500px; */
+    width: 37%;
+    height: 700px;
+    overflow: hidden;
+}
+#profile .photo img{
     width: 500px;
-    height: 770px;
+    height: 700px;
 }
 #profile .in_profile .pro_mn{
-    width: 600px;
-    height: 770px;
+    /* width: 500px; */
+    width: 63%;
+    height: 700px;
     background-color: #eee;
 }
-#profile .in_profile .pro_mn h3{
+#profile .in_profile .pro_mn_h{
+    width: 600px;
+    height: 120px;
+    /* border-bottom: 1px solid #184B44; */
+} 
+#profile .in_profile .pro_mn h4{
     font-family: 'Ink Free';
     color: #184B44;
     font-size: 50px;
-    padding: 50px 0 0 50px;
-    width: 550px;
-    height: 120px;
-    border-bottom: 1px solid #184B44;;
+    margin: 60px 0 0 70px;
 }
-
+#profile .in_profile ul{
+    width: 600px;
+    height: 440px;
+    display: flex;
+}
+#profile .in_profile ul li:nth-child(1){
+    width: 120px;
+    height: 440px;
+    border: 1px solid #184B44;
+    margin: 0 30px 0 20px;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+#profile .in_profile ul li:nth-child(2){
+    width: 450px;
+    height: 440px;
+    border: 1px solid #184B44;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
 #profile .pro_wrap{
     width: 2800px;
     height: 80vh;
@@ -211,58 +229,94 @@ a {
     position: relative;
     left: -300px;
     z-index: 90;
+    margin-top: 40px;
 }
 #profile .pro_wrap .pro_box{ 
     display: none;
     width: 1300px;
     height: 80vh;
-    background:url(../images0/Untitled-2.png) no-repeat 0 0;
     float:left;
     /* margin-left: 30%; */
     border: 2px solid red;
 }
+
+/* =============  skill  =================== */
+
 #skill{
     width: 100%;
     height: 100vh;
 }
-#skill .sk_img{
-    width: 1200px;
-    height: 95vh;
-    background-color: #4460AA;
+#skill_in{
     margin: 0 auto;
+    width: 1400px;
+    background-color: #18223d;
+}
+#skill .sk_img{
+    float: left;
+    width: 550px;
+    height: 100vh;
+    /* border-right: 2px solid #184B44; */
+    box-sizing: border-box;
 }
 #skill .sk_img > img{
-    width: 550px;
-    height: 1050px;
-    /* border: 5px solid #9E7653; */
+    width: 520px;
+    height: 900px;
 }
 
 #skill .in_skill {
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#skill .skill_list {
-    display: flex;
-}
-
-#skill .skill_list img{
-    width: 50px;
-    height: 50px;
-}
-#skill .skill_list ul{
     float: left;
-    margin-right: 5px;
-    text-align: center;
-    background-color: #184B44;
-    width: 470px;
-    height: 400px;
+    width: 800px;
+    /* height: 100%; */
+    display: flex;
+    background-color: #f2f2f2;
+    flex-direction: column;
+}
+#skill .in_skill .skill_txt{
+    width: 100%;
+    height: 200px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #184B44;
+}
+#skill .in_skill h3{
+    font-family: 'Scarlett Busiat_Demo';
+    color: #184B44;;
+    font-weight: 400;
+    font-size: 120px;
+    margin: 50px 0 0 250px;
 }
 
 
+/* ========================================= */
 
+#skill .in_skill .skill_list_t{
+    width: 100%;
+    height: 700px;
+    /* background-color: seagreen; */
+    /* border-bottom: 2px solid #184B44; */
+    float: right;
+}
+#skill .skill_list_t ul{
+    width: 100%;
+    height: 29vh;
+    display: flex;
+    justify-content: space-around;
+}
+#skill .skill_list_t ul:first-child{
+    margin-top: 150px;
+}
+#skill .skill_list_t ul li{
+    float: left;
+    /* width: 25%; */
+    height: 37vh;
+    box-sizing: border-box;
+    
+}
+#skill .skill_list_t img{
+    width: 80px;
+    height: 80px;
+}
+
+/* ============= 프로젝트 =========================== */
 #project_1 {
     width: 100%;
     height: 100vh;
@@ -273,25 +327,162 @@ a {
     width: 50%;
     height: 100vh;
     background-color: #b3afaf;
+    border-right: 2px solid #184B44;
+    box-sizing: border-box;
+}
+#project_1 .project_area{
+    width: 742px;
+    height: 840px;
+    /* background-color: #e0e0e0; */
+    margin-left: 150px;
+}
+#project_1 .project_area h3{
+    font-family: 'Scarlett Busiat_Demo';
+    color: #184B44;;
+    font-weight: 400;
+    font-size: 120px;
+    margin: 50px 0 0 250px;
+}
+#project_1 .project_area ul{
+    width: 60%;
+    height: 30px;
+    /* background-color: #184B44; */
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0 70px 140px;
+    box-sizing: border-box;
+}
+#project_1 .project_area ul li{
+    border-bottom: 2px solid #184B44;
+}
+#project_1 .project_area .in_1{
+    width: 70%;
+    height: 400px;
+    background-color: #eeeeee;
+    margin: 0 auto;
+}
+#project_1 .project_area .in_1 h5{
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #333;
+    margin: 10px 0;
+}
+#project_1 .project_area .in_1 p{
+    margin-top: 30px;
+    line-height: 50px;
+    font-size: 16px;
+    float: left;
+}
+#project_1 .project_area .in_1 b{
+    font-size: 17px;
+    color: #1a4b44;
+}
+#project_1 .project_area button{
+    width: 120px;
+    height: 45px;
+    background-color: #184B44;
+    color: #e0e0e0;
+    font-size: medium;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    margin: 50px 0 0 215px;
+    transition: all 0.4s ease;
+}
+#project_1 .project_area button:last-child{
+    margin-left: 50px;
+}
+#project_1 .project_area button:hover{
+    background-color: #e8c89c;
+    color: #333;
 }
 #project_1 .in_project_2{
     width: 50%;
     height: 100vh;
     background-color: #e8c89c;
 }
+#project_1 .in_project_2 .in_project_2_area{
+    width: 650px;
+    height: 840px;
+    background-color: #be9b6a;
+    margin: 60px 0 0 50px;
+}
+
+
+
+
+#end .in_end{
+    width: 80%;
+    height: 100vh;
+    /* background-color: #4460AA; */
+    margin: 0 auto;
+}
+#end .in_end .in_end_tx{
+    width: 100%;
+    height: 150px;
+    /* background-color: #def0ed; */
+    text-align: center;
+    padding-top: 30px;
+}
+#end .in_end .in_end_tx h3{
+    font-family: 'Scarlett Busiat_Demo';
+    color: #184B44;;
+    font-weight: 400;
+    font-size: 120px;
+
+}
+#end .in_end .info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+#end .in_end .info_in{
+    width: 70%;
+}
+#end .in_end .info_in{
+    width: 1000px;
+    height: 600px;
+    /* background-color: #333; */
+    padding-left: 40px;
+}
+
+#end .in_end .info_in .info_img{
+    width: 900px;
+    height: 500px;
+    background: url(../images0/people-2557396_1920.jpg) no-repeat 0 0; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#end .in_end .info_in .info_img h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: #e0e0e0;
+}
+
+
+
 
 
 
 
 /*메일서버*/
+#end .in_end .mail{
+    width: 20%;
+    float: right;
+    margin:0 auto; 
+}
 .field {
     margin-bottom: 10px;
 }
 
 .field label {
     display: block;
-    font-size: 12px;
-    color: #777;
+    font-size: 15px;
+    color: #333;
 }
 
 .field input {
@@ -308,4 +499,13 @@ input[type="submit"] {
     background-color: #4460AA;
     color: #fff;
     border: none
+}
+/* 푸터부분 */
+#end footer{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    padding-top: 30px;
+    background-color: #184B44;
+    color: #def0ed;
 }

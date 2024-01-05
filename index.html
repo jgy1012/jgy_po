@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>정가영 이력서 사이트</title>
     <script src="js/jquery.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/scarlett-busiatdemo" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    
     <script>
         $(function () {
             var menu = $('.nav > li');
@@ -76,8 +78,7 @@
         </div>
         <!-- 소개 -->
         <div id="profile">
-            <section class="pro_area"></section>
-            
+            <section class="pro_area">
                 <div class="in_profile">
                     <div class="in_txt">
                         <h3>PROFILE</h3>
@@ -86,127 +87,164 @@
                         <div class="photo">
                             <img src="./images0/Untitled-3.png">
                         </div>
-                        <ul class="pro_mn">
-                            <li><h3>JUNG GA YOUNG</h3></li>
-                            <li>수료</li>
-                            <li>SBS 아카데미컴퓨터아트학원UIUX 웹퍼블리셔 양성과정 수료(3개월)</li>
-                        </ul>
+                        <div class="pro_mn">
+                            <div class="pro_mn_h"> 
+                                <h4>JUNG GA YOUNG</h4>
+                            </div>
+                            <ul> 
+                                <li><p>수료</p></li>
+                                <li><p>SBS 아카데미컴퓨터아트학원UIUX 웹퍼블리셔 양성과정 수료(3개월)</p></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <section class="pro_wrap">
-                    <div class="pro_box"></div>
-                </section>
+            </section>
+            <section class="pro_wrap">
+                <div class="pro_box"></div>
             </section>
         </div>
         <!-- 스킬 -->
         <div id="skill">
-            <div class="sk_img">
-                <img src="./images0/Untitled-1555.png" style="float: left;">
-                <div class="in_skill" style="float: left;">
-                    <h3>SKILL</h3>
-                    <ul class="skill_list">
-                        <li><img src="">시멘틱태그 마크업, 부모-자식관계 이해도, 
-                            폼요소 활용(input, select, form, button), 유니코드/아이콘 사용, 
-                            target 속성, display 속성 이해도
-                            </li>
-                    </ul>
-                    <ul class="skill_list">
-                        <li><img src=""></li>
-                    </ul>
-                    <ul class="skill_list">
-                        <li><img src=""></li>
-                    </ul>
-                    
-                </div>
+            <div id="skill_in">
+                    <div class="sk_img">
+                        <img src="./images0/Untitled-1555.png">
+                    </div>
+                    <div class="in_skill">
+                        <div class="skill_txt">
+                            <h3>SKILL</h3>
+                        </div>
+                        <div class="skill_list_t">
+                            <ul>
+                                <li><img src="./images0/icon/free-icon-html-5-732212.png" alt="html"></li>
+                                <li><img src="./images0/icon/free-icon-css-3-732190.png" alt="css"></li>
+                                <li><img src="./images0/icon/free-icon-js-5968292.png" alt="js"></li>
+                                <li><img src="./images0/icon/jquery2.png" alt="jqyery"></li>
+                            </ul>
+                            <ul>
+                                <li><img src="./images0/icon/photoshop_5968520.png" alt="photoshop"></li>
+                                <li><img src="./images0/icon/xd_5968559.png" alt="xd"></li>
+                                <li><img src="./images0/icon/figma_5968705.png" alt="figma"></li>
+                            </ul>
+                        </div>
             </div>
-            
-            
+            </div>
         </div>
         <!-- 프로젝트1 -->
         <div id="project_1">
             <div class="in_project_1">
-                <h3>project</h3>
-                <ul>
-                    <li>국립공주박물관</li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <div class="in_1">
-                    <p>기존 BBC사이트를 한국인 전용 사이트로 만들어 
-                        한국유저가 접근하기 쉽게 리뉴얼 했습니다.
-                        
-                        작업기간 : 10일
-                        작업인원 : 3인 (팀장)
-                        참여요율 : main (100%) / 공지사항 게시판
-                        사용언어 : html · css · jQuery · javaScript
-                        참고사항 : 메인페이지1, 서브페이지7</p>
+                <div class="project_area">
+                    <h3>project</h3>
+                    <ul>
+                        <li>국립공주박물관</li>
+                        <li>현대중공업</li>
+                    </ul>
+                    <div class="in_1">
+                        <h5>기존 국립 공주 박물관 홈페이지를<br>
+                            모든 연령층이 사용하기 쉽게 리뉴얼 했습니다.
+                        </h5>
+                        <hr>
+                        <p>
+                            <b>작업기간</b> : 
+                            <br>
+                            <b>작업인원</b> : 1인
+                            <br>
+                            <b>참여요율</b> : main (100%) / 공지사항 게시판
+                            <br>
+                            <b>사용언어</b> : html · css · jQuery · javaScript
+                            <br>
+                            <b>참고사항</b> : 메인페이지1, 
+                        </p>
+                    </div>
+                    <button class="btn1">사이트보기</button>
+                    <button class="btn2">PPT보기</button>
                 </div>
-                <div class="btn1">사이트보기</div>
-                <div class="btn2">PPT보기</div>
             </div>
             <div class="in_project_2">
-                
+                <div class="in_project_2_area">
+                    <ul>
+                        <li><img src="#" alt="국립공주박물관"></li>
+                        <li><img src="#" alt="현대중공업"></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!-- 마무리 -->
         <div id="end">
             <div class="in_end">
-
-                <div style="margin:0 auto; width:800px ;">
-                    <form id="form">
-                        <div class="field">
-                            <label for="from_name" style="font-size: 20px; color: #4460AA;">from_name</label>
-                            <input type="text" name="from_name" id="from_name">
+                <div class="in_end_tx">
+                    <h3>Thank You</h3>
+                </div>
+                <div class="info">
+                    <div class="info_in">
+                        <div class="info_img">
+                            <h4>I am not a product of my circumstances. I am a product of my decisions.
+                                <br>Stephen R. covey
+                            </h4>
                         </div>
-                        <div class="field">
-                            <label for="to_name">to_name</label>
-                            <input type="text" name="to_name" id="to_name">
-                        </div>
-                        <div class="field">
-                            <label for="message">message</label>
-                            <input type="text" name="message" id="message">
-                        </div>
-                        <div class="field">
-                            <label for="tel">tel</label>
-                            <input type="text" name="tel" id="tel">
-                        </div>
-                        <div class="field">
-                            <label for="reply_to">reply_to</label>
-                            <input type="text" name="reply_to" id="reply_to">
-                        </div>
+                    </div>
+                    <div class="mail">
+                        <form id="form">
+                            <div class="field">
+                                <label for="from_name" style="font-size: 20px; color: #4460AA;">from_name</label>
+                                <input type="text" name="from_name" id="from_name">
+                            </div>
+                            <div class="field">
+                                <label for="to_name">to_name</label>
+                                <input type="text" name="to_name" id="to_name">
+                            </div>
+                            <div class="field">
+                                <label for="message">message</label>
+                                <input type="text" name="message" id="message">
+                            </div>
+                            <div class="field">
+                                <label for="tel">tel</label>
+                                <input type="text" name="tel" id="tel">
+                            </div>
+                            <div class="field">
+                                <label for="reply_to">reply_to</label>
+                                <input type="text" name="reply_to" id="reply_to">
+                            </div>
 
-                        <input type="submit" id="button" value="Send Email">
-                    </form>
-                    <script type="text/javascript"
-                        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+                            <input type="submit" id="button" value="Send Email">
+                        </form>
+                        <script type="text/javascript"
+                            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-                    <script type="text/javascript">
-                        emailjs.init('JtV5i8-ouNynKWINV')
+                        <script type="text/javascript">
+                            emailjs.init('JtV5i8-ouNynKWINV')
 
-                        const btn = document.getElementById('button');
+                            const btn = document.getElementById('button');
 
-                        document.getElementById('form')
-                            .addEventListener('submit', function (event) {
-                                event.preventDefault();
+                            document.getElementById('form')
+                                .addEventListener('submit', function (event) {
+                                    event.preventDefault();
 
-                                btn.value = 'Sending...';
+                                    btn.value = 'Sending...';
 
-                                const serviceID = 'service_zp0m0lh';
-                                const templateID = 'template_2nvz7cu';
+                                    const serviceID = 'service_zp0m0lh';
+                                    const templateID = 'template_2nvz7cu';
 
-                                emailjs.sendForm(serviceID, templateID, this)
-                                    .then(() => {
-                                        btn.value = 'Send Email';
-                                        alert('메일보내기 성공');
-                                    }, (err) => {
-                                        btn.value = 'Send Email';
-                                        alert(JSON.stringify(err));
-                                    });
-                            });
-                    </script>
+                                    emailjs.sendForm(serviceID, templateID, this)
+                                        .then(() => {
+                                            btn.value = 'Send Email';
+                                            alert('메일보내기 성공');
+                                        }, (err) => {
+                                            btn.value = 'Send Email';
+                                            alert(JSON.stringify(err));
+                                        });
+                                });
+                        </script>
+                    </div>
                 </div>
             </div>
+            <footer>
+                <div class="footer_txt">
+                    <h4>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.<br>
+                    2024 Jung Ga Young ⓒ All Rights Reserved.</h4>
+                </div>
+            </footer>
         </div>
+        
     </div>
     <!-- 퀵메뉴 -->
     <div id="q_mn">
@@ -229,6 +267,21 @@
             );
         });
     </script>
+    <!--========================== 팝업.js ==========================================-->  
+    <SCRIPT src="js/needpopup.min.js" type="text/javascript"></SCRIPT>
+    <SCRIPT>
+        needPopup.config.custom = {
+            'removerPlace': 'outside',
+            'closeOnOutside': false,
+            onShow: function () {
+                console.log('needPopup is shown');
+            },
+            onHide: function () {
+                console.log('needPopup is hidden');
+            }
+        };
+        needPopup.init();
+    </SCRIPT>
 </body>
 
 </html>
