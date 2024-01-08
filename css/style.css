@@ -52,12 +52,12 @@ a {
 
 #main .nav {
     float: right;
-    margin: 50px 0 0 0;
+    margin: 50px 50px 0 0;
 }
 
 #main .nav li {
     float: left;
-    margin-right: 50px;
+    padding-left: 50px;
 }
 
 #main .nav a {
@@ -74,7 +74,7 @@ a {
 #main h2 {
     float: left;
     width: 100%;
-    margin: 60px 0 20px 1%;
+    margin: 60px 0 10px 0;
     font-size: 100px;
     text-align: center;
     /* padding-right: 100px; */
@@ -249,7 +249,7 @@ a {
 #skill_in{
     margin: 0 auto;
     width: 1400px;
-    background-color: #18223d;
+    /* background-color: #18223d; */
 }
 #skill .sk_img{
     float: left;
@@ -388,7 +388,6 @@ a {
     border: none;
     border-radius: 10px;
     margin: 50px 0 0 215px;
-    transition: all 0.4s ease;
 }
 #project_1 .project_area button:last-child{
     margin-left: 50px;
@@ -408,7 +407,10 @@ a {
     background-color: #be9b6a;
     margin: 60px 0 0 50px;
 }
-
+#project_1 .in_project_2_area ul > li img{
+    width: 500px;
+    
+}
 
 
 
@@ -460,7 +462,7 @@ a {
 #end .in_end .info_in .info_img h4{
     font-size: 20px;
     font-weight: 600;
-    color: #e0e0e0;
+    color: #f1f1f1;
 }
 
 
@@ -496,7 +498,7 @@ input[type="submit"] {
     display: block;
     padding: 6px 30px;
     font-size: 14px;
-    background-color: #4460AA;
+    background-color: #184B44;
     color: #fff;
     border: none
 }
